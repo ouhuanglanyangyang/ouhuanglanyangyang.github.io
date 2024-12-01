@@ -427,8 +427,8 @@ new Vue({
                 if (!axios.isCancel(e)) {
 				//layer.msg(e.message, {icon:2})
 				layer.msg('因对方服务器限制，该资源暂无法访问，建议更换其他节点！', {icon:2})
-				 //  this.set.status = false
-				  this.set.status = true
+				 this.set.status = false
+				  //this.set.status = true
                 }
             }).finally(() => {
                 delete that.tasks[index]
